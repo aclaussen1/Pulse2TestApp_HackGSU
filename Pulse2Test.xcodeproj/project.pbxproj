@@ -15,6 +15,7 @@
 		769D07671C1A3846000DBB24 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769D07661C1A3846000DBB24 /* ExternalAccessory.framework */; };
 		76D04E501C1A75DC005C1005 /* LEDPatternTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D04E4F1C1A75DC005C1005 /* LEDPatternTableViewController.swift */; };
 		B1F27B341DBB94FC0064C6EE /* Pulse2SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F27B331DBB94FC0064C6EE /* Pulse2SDK.framework */; };
+		C8043650BC1C7704697E6B1D /* Pods_Pulse2Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94854F8132401CCD4FF5925 /* Pods_Pulse2Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17F1D0546528B20E5F9FE255 /* Pods-Pulse2Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse2Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pulse2Test/Pods-Pulse2Test.release.xcconfig"; sourceTree = "<group>"; };
+		1B0B1F4E1C387833EB2D604A /* Pods-Pulse2Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse2Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pulse2Test/Pods-Pulse2Test.debug.xcconfig"; sourceTree = "<group>"; };
 		769D07461C1A00C2000DBB24 /* Pulse2Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulse2Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		769D07491C1A00C2000DBB24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		769D074E1C1A00C2000DBB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		769D07661C1A3846000DBB24 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		76D04E4F1C1A75DC005C1005 /* LEDPatternTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LEDPatternTableViewController.swift; sourceTree = "<group>"; };
 		B1F27B331DBB94FC0064C6EE /* Pulse2SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pulse2SDK.framework; sourceTree = "<group>"; };
+		C94854F8132401CCD4FF5925 /* Pods_Pulse2Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pulse2Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +55,28 @@
 			files = (
 				B1F27B341DBB94FC0064C6EE /* Pulse2SDK.framework in Frameworks */,
 				769D07671C1A3846000DBB24 /* ExternalAccessory.framework in Frameworks */,
+				C8043650BC1C7704697E6B1D /* Pods_Pulse2Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2845FF128005F41735AD4553 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B0B1F4E1C387833EB2D604A /* Pods-Pulse2Test.debug.xcconfig */,
+				17F1D0546528B20E5F9FE255 /* Pods-Pulse2Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		497410371C1AAD02002FBCFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B1F27B331DBB94FC0064C6EE /* Pulse2SDK.framework */,
 				769D07661C1A3846000DBB24 /* ExternalAccessory.framework */,
+				C94854F8132401CCD4FF5925 /* Pods_Pulse2Test.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -72,6 +87,7 @@
 				497410371C1AAD02002FBCFC /* Frameworks */,
 				769D07481C1A00C2000DBB24 /* Pulse2Test */,
 				769D07471C1A00C2000DBB24 /* Products */,
+				2845FF128005F41735AD4553 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,10 +121,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 769D07581C1A00C2000DBB24 /* Build configuration list for PBXNativeTarget "Pulse2Test" */;
 			buildPhases = (
+				2BA895B3A280720ECCD9CF51 /* [CP] Check Pods Manifest.lock */,
 				769D07421C1A00C2000DBB24 /* Sources */,
 				769D07431C1A00C2000DBB24 /* Frameworks */,
 				769D07441C1A00C2000DBB24 /* Resources */,
 				76D04E5A1C1A8A7C005C1005 /* Embed Frameworks */,
+				48F09CD0A0BE520101F2EA8A /* [CP] Embed Pods Frameworks */,
+				54462C1821BAFAE945C2975D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,6 +185,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BA895B3A280720ECCD9CF51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48F09CD0A0BE520101F2EA8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pulse2Test/Pods-Pulse2Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54462C1821BAFAE945C2975D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pulse2Test/Pods-Pulse2Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		769D07421C1A00C2000DBB24 /* Sources */ = {
@@ -283,6 +350,7 @@
 		};
 		769D07591C1A00C2000DBB24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0B1F4E1C387833EB2D604A /* Pods-Pulse2Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -310,6 +378,7 @@
 		};
 		769D075A1C1A00C2000DBB24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F1D0546528B20E5F9FE255 /* Pods-Pulse2Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
